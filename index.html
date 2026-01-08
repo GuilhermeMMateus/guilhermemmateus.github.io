@@ -3,12 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Sensitive Email Writing & Review</title>
   <meta name="description" content="Careful writing and revision of sensitive emails and institutional communications in English, European Portuguese, and Brazilian Portuguese." />
+
+  <!-- Canonical + language alternates (replace with your real domain/paths) -->
+  <link rel="canonical" href="https://YOUR_DOMAIN_HERE/" />
+  <link rel="alternate" hreflang="en" href="https://YOUR_DOMAIN_HERE/" />
+  <link rel="alternate" hreflang="pt" href="https://YOUR_DOMAIN_HERE/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://YOUR_DOMAIN_HERE/" />
+
+  <!-- Social sharing (replace placeholders) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sensitive Email Writing & Review" />
+  <meta property="og:description" content="Careful writing and revision of sensitive emails and institutional communications in English, European Portuguese, and Brazilian Portuguese." />
+  <meta property="og:url" content="https://YOUR_DOMAIN_HERE/" />
+  <!-- Optional: add an image for link previews -->
+  <!-- <meta property="og:image" content="https://YOUR_DOMAIN_HERE/og-image.png" /> -->
+
   <style>
     :root { color-scheme: light dark; }
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; padding: 0; }
-    .wrap { max-width: 860px; margin: 0 auto; padding: 28px 18px 60px; }
+    a { color: inherit; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px 60px; }
     header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 18px; }
     .lang a { text-decoration: none; padding: 6px 10px; border: 1px solid currentColor; border-radius: 999px; font-size: 14px; }
     .lang a[aria-current="page"] { font-weight: 700; }
@@ -16,64 +33,175 @@
     h2 { font-size: 18px; margin: 26px 0 10px; }
     p { margin: 10px 0; }
     ul { margin: 10px 0 10px 20px; }
-    .card { border: 1px solid rgba(127,127,127,.35); border-radius: 14px; padding: 16px 16px; margin: 14px 0; }
     .note { font-size: 14px; opacity: .9; }
-    .contact { font-weight: 600; }
+    .card { border: 1px solid rgba(127,127,127,.35); border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 820px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .card h3 { margin: 0 0 8px; font-size: 16px; }
+    .pill { display: inline-block; font-size: 12px; padding: 4px 10px; border: 1px solid rgba(127,127,127,.45); border-radius: 999px; opacity: .95; margin: 6px 0 8px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 12px 0 0; }
+    .btn { display: inline-block; text-decoration: none; padding: 10px 14px; border: 1px solid currentColor; border-radius: 12px; font-weight: 650; }
+    .btn.secondary { font-weight: 600; opacity: .95; }
+    .contact { font-weight: 650; }
     footer { margin-top: 28px; font-size: 13px; opacity: .85; }
-    a { color: inherit; }
+
+    /* Accessibility */
+    .skip-link {
+      position: absolute; left: -999px; top: 10px;
+      padding: 10px 12px; border: 1px solid currentColor; border-radius: 12px;
+      background: Canvas; color: CanvasText;
+    }
+    .skip-link:focus { left: 10px; z-index: 999; }
   </style>
 </head>
+
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="wrap">
     <header>
-      <div class="note">Sensitive communications • writing & revision</div>
+      <div class="note">Sensitive communications • writing &amp; revision</div>
       <nav class="lang" aria-label="Language">
         <a href="/" aria-current="page">EN</a>
         <a href="/pt/">PT</a>
       </nav>
     </header>
 
-    <h1>Careful writing for sensitive emails</h1>
+    <main id="main">
+      <h1>Careful writing for sensitive emails</h1>
 
-    <p>
-      I help people draft, rewrite, and de-risk emails and short written communications where tone, precision,
-      and institutional dynamics matter.
-    </p>
+      <p>
+        I help people draft, rewrite, and de-risk emails and short written communications where tone, precision,
+        and institutional dynamics matter.
+      </p>
 
-    <div class="card">
-      <p><strong>Typical contexts</strong></p>
-      <ul>
-        <li>Universities and administrative services</li>
-        <li>HR conversations (requests, disputes, exits, negotiations)</li>
-        <li>Institutional complaints and formal follow-ups</li>
-        <li>Client / vendor conflict resolution and boundary-setting</li>
-      </ul>
-    </div>
+      <div class="card">
+        <p><strong>Typical contexts</strong></p>
+        <ul>
+          <li>Universities and administrative services</li>
+          <li>HR conversations (requests, disputes, exits, negotiations)</li>
+          <li>Institutional complaints and formal follow-ups</li>
+          <li>Client / vendor conflict resolution and boundary-setting</li>
+        </ul>
+      </div>
 
-    <h2>What you get</h2>
-    <ul>
-      <li>A revised version that preserves your intent while reducing ambiguity and unnecessary escalation</li>
-      <li>Optional short notes on why key changes were made (so you can reuse the pattern)</li>
-      <li>One iteration cycle by default (more if needed, agreed upfront)</li>
-    </ul>
+      <section aria-labelledby="services">
+        <h2 id="services">Services</h2>
 
-    <h2>Languages</h2>
-    <p>English • European Portuguese (PT-PT) • Brazilian Portuguese (PT-BR)</p>
+        <div class="grid">
+          <div class="card">
+            <h3>1) Review / De-risk</h3>
+            <div class="pill">Fixed price</div>
+            <p class="note">You wrote the draft; I make it safer, clearer, and harder to misread.</p>
+            <ul>
+              <li>Edited version (clean copy)</li>
+              <li>Short notes on key changes</li>
+              <li>1 revision round included</li>
+            </ul>
+            <p class="note"><strong>Scope:</strong> up to 500 words • turnaround 24–48h</p>
+          </div>
 
-    <h2>What this is not</h2>
-    <ul>
-      <li>Not legal representation, and not a substitute for legal advice</li>
-      <li>Not marketing copywriting</li>
-      <li>Not long documents (unless we agree explicitly)</li>
-    </ul>
+          <div class="card">
+            <h3>2) Drafting</h3>
+            <div class="pill">Fixed price</div>
+            <p class="note">You give the facts + goal; I write from scratch.</p>
+            <ul>
+              <li>1–2 draft options (tone/strategy variants)</li>
+              <li>Short explanation of structure and tone choices</li>
+              <li>1 revision round included</li>
+            </ul>
+            <p class="note"><strong>Scope:</strong> up to 700 words • turnaround 24–48h</p>
+          </div>
 
-    <h2>Contact</h2>
-    <p class="contact">Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
-    <p class="note">When you write, include: the draft (if any), who it’s for, what outcome you want, and any constraints (tone, deadlines).</p>
+          <div class="card">
+            <h3>3) Bespoke / High-stakes</h3>
+            <div class="pill">From X (range pricing)</div>
+            <p class="note">Complex cases: more context, more variants, more iteration.</p>
+            <ul>
+              <li>Structured intake (optional short call)</li>
+              <li>Multiple variants + reply-ready follow-ups</li>
+              <li>2–3 revision rounds included</li>
+              <li>Optional EN / PT-PT / PT-BR localization</li>
+            </ul>
+            <p class="note"><strong>Pricing:</strong> starting at X • final quote depends on scope and urgency</p>
+          </div>
+        </div>
 
-    <footer>
-      <p class="note">Last updated: 2026-01-08</p>
-    </footer>
+        <div class="card">
+          <p><strong>Optional add-ons</strong> <span class="note">(quoted upfront)</span></p>
+          <ul>
+            <li>Rush turnaround</li>
+            <li>Extra revision rounds</li>
+            <li>Extra variants (different levels of firmness/formality)</li>
+            <li>Thread support (prepare replies to likely responses)</li>
+            <li>Translation / localization between EN, PT-PT, and PT-BR</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="how">
+        <h2 id="how">How it works</h2>
+        <ul>
+          <li>You email: the draft (if any), who it’s for, what outcome you want, and constraints (tone, deadlines).</li>
+          <li>I confirm scope + timing (and quote if Bespoke).</li>
+          <li>You receive the draft + notes.</li>
+          <li>We do the included revision round (more if agreed upfront).</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="deliverables">
+        <h2 id="deliverables">What you get</h2>
+        <ul>
+          <li>A version that preserves your intent while reducing ambiguity and unnecessary escalation</li>
+          <li>Optional notes on why key changes were made (so you can reuse the pattern)</li>
+          <li>Clear asks, clean structure, and “reply-safe” phrasing</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="languages">
+        <h2 id="languages">Languages</h2>
+        <p>English • European Portuguese (PT-PT) • Brazilian Portuguese (PT-BR)</p>
+      </section>
+
+      <section aria-labelledby="confidentiality">
+        <h2 id="confidentiality">Confidentiality</h2>
+        <p class="note">
+          I treat your materials as confidential and only use them to produce your draft. If you want deletion after delivery,
+          say so in your first message.
+        </p>
+      </section>
+
+      <section aria-labelledby="not">
+        <h2 id="not">What this is not</h2>
+        <ul>
+          <li>Not legal representation, and not a substitute for legal advice</li>
+          <li>Not marketing copywriting</li>
+          <li>Not long documents (unless we agree explicitly)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact</h2>
+        <p class="contact">Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+        <p class="note">
+          Include: (1) draft (if any), (2) recipient/context, (3) desired outcome, (4) constraints (tone, deadlines),
+          (5) language (EN / PT-PT / PT-BR).
+        </p>
+
+        <div class="cta" aria-label="Primary actions">
+          <a class="btn" href="mailto:YOUR_EMAIL_HERE?subject=Email%20writing%20request">Request a draft / review</a>
+          <a class="btn secondary" href="#services">Compare services</a>
+        </div>
+
+        <p class="note" style="margin-top:12px;">
+          Note: I’m not a lawyer. For legal strategy, consult a qualified professional; I can help you communicate clearly once you know the plan.
+        </p>
+      </section>
+
+      <footer>
+        <p class="note">Last updated: 2026-01-08</p>
+      </footer>
+    </main>
   </div>
 </body>
 </html>
